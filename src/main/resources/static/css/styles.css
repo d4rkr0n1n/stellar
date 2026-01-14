@@ -1,0 +1,11 @@
+/* Add your custom styles here */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+footer{
+    background-color: darkgray;
+}
+nav{
+    background-color: darkgray;
+}

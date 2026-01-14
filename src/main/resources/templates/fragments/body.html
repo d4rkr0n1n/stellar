@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<footer th:fragment="footer" class="text-center mt-4">
+  <p>&copy; 2026 Stellar Application</p>
+</footer>
+
+<header th:fragment="header">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Project Stellar</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Essentials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Memory</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<main th:fragment="main" class="container mt-4">
+  <h1>Welcome to the Application</h1>
+  <p>Use the navigation bar above to explore.</p>
+</main>
