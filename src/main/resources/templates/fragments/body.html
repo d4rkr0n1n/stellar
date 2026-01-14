@@ -9,13 +9,16 @@
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Project Stellar</a>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" id="navbar">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Essentials</a>
+            <a class="nav-link active" id="essentials-link" href="#" onclick="toggleSec('essentials')">Essentials</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Memory</a>
+            <a class="nav-link" id="memory-link" href="#" onclick="toggleSec('memory')">Memory</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="rag-link" href="#" onclick="toggleSec('rag')">RAG</a>
           </li>
         </ul>
       </div>
@@ -25,6 +28,29 @@
 
 
 <main th:fragment="main" class="container mt-4">
-  <h1>Welcome to the Application</h1>
-  <p>Use the navigation bar above to explore.</p>
+  <section id="essentials-section">
+    <h1>Welcome to the Application</h1>
+    <p>Use the navigation bar above to explore.</p>
+  </section>
+  <section id="memory-section" hidden>
+    <h1>Welcome to the Memory</h1>
+    <p>Use the navigation bar above to explore.</p>
+  </section>
+  <section id="rag-section" hidden>
+    <h1>Welcome to the RAG</h1>
+    <p>Use the navigation bar above to explore.</p>
+  </section>
 </main>
+
+<head th:fragment="head">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title th:text="${title}"></title>
+
+  <link th:href="@{/webjars/bootstrap/5.3.8/css/bootstrap.min.css}" rel="stylesheet">
+  <script th:src="@{/webjars/bootstrap/5.3.8/js/bootstrap.bundle.min.js}"></script>
+  <script th:src="@{/webjars/jquery/3.7.1/jquery.min.js}"></script>
+  <link th:href="@{/css/styles.css}" rel="stylesheet">
+  <script th:src="@{/js/script.js}"></script>
+
+</head>
