@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<section th:fragment="essentials" id="essentials-section">
+  <h1>Welcome to the Project Stellar</h1>
+  <div class="card">
+    <div class="card-header">
+      Stream Usage
+    </div>
+    <div class="card-body">
+      <div class="input-group">
+        <input type="text" id="stream-input" class="form-control" placeholder="Enter Prompt" />
+        <button type="button" class="btn btn-dark" onclick="fetchStream()">Process</button>
+      </div>
+      <p class="mt-2 card-text">Output:</p>
+      <div id="stream-output" class="mt-2"></div>
+    </div>
+  </div>
+</section>

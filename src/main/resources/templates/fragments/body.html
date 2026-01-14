@@ -28,10 +28,7 @@
 
 
 <main th:fragment="main" class="container mt-4">
-  <section id="essentials-section">
-    <h1>Welcome to the Application</h1>
-    <p>Use the navigation bar above to explore.</p>
-  </section>
+  <section th:replace="~{fragments/section :: essentials}"></section>
   <section id="memory-section" hidden>
     <h1>Welcome to the Memory</h1>
     <p>Use the navigation bar above to explore.</p>
